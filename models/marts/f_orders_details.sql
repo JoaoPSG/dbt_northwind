@@ -9,7 +9,13 @@ orders as (
 
 
 final as (
-    select * from order_details
+    select
+        orders.*
+        ,order_details.unit_price
+        ,order_details.quantity
+        ,order_details.discount
+    
+    from order_details
 
     left join orders on order_details.order_id = orders.order_id
 )

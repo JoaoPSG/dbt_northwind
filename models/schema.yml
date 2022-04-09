@@ -16,6 +16,7 @@ sources:
       - name: public_shippers
       - name: public_suppliers
       - name: public_territories
+      - name: public_employee_territories
 
 
 

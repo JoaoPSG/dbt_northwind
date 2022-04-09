@@ -13,7 +13,23 @@ suppliers as (
 
 
 final as (
-    select * from products
+    select
+        products.*
+        ,categories.category_name
+        ,categories.description
+        ,suppliers.company_name
+        ,suppliers.contact_name
+        ,suppliers.contact_title
+        ,suppliers.address
+        ,suppliers.city
+        ,suppliers.region
+        ,suppliers.postal_code
+        ,suppliers.country
+        ,suppliers.phone
+        ,suppliers.fax
+        ,suppliers.homepage
+    
+    from products
 
     left join categories on products.category_id = categories.category_id
     left join suppliers on products.supplier_id = suppliers.supplier_id
