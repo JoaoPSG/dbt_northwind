@@ -1,0 +1,35 @@
+version: 2
+
+sources:
+  - name: northwind_bq
+    description: "northwind dw big query"
+    database: valid-sol-346522
+    schema: dbt_northwind
+    tables:
+      - name: d_customemers
+      - name: d_employees
+      - name: d_products
+      - name: d_shippers
+      - name: f_orders_details
+
+
+
+  # - name: northwind
+  #   description: "northwind database"
+  #   database: northwind
+  #   schema: public
+  #   tables:
+  #     - name: categories
+  #     - name: customer_customer_demo
+  #     - name: customer_demographics
+  #     - name: customers
+  #     - name: employee_territories
+  #     - name: employees
+  #     - name: order_details
+  #     - name: oeders
+  #     - name: products
+  #     - name: region
+  #     - name: shippers
+  #     - name: supliers
+  #     - name: territories
+  #     - name: us_states
