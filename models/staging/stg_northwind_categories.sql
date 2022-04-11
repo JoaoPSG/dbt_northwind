@@ -3,7 +3,12 @@ with source as (
 ),
 
 categories as (
-    select * from source
+    select
+        category_id
+        ,category_name
+        ,"description" as catetgory_description
+
+    from source
 )
 
 select * from categories

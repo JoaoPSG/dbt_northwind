@@ -3,7 +3,22 @@ with source as (
 ),
 
 suppliers as (
-    select * from source
+    select
+        /* Natural Key */
+        supplier_id
+        /* Columns */
+        ,company_name
+        ,contact_name
+        ,contact_title
+        ,"address" as supplier_address --changing here because of name error afterwards
+        ,city
+        ,region
+        ,postal_code
+        ,country
+        ,phone
+        ,fax
+        ,homepage
+    from source
 )
 
 select * from suppliers

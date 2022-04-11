@@ -3,7 +3,15 @@ with source as (
 ),
 
 order_details as (
-    select * from source
+    select
+        /* Natural Key */
+        order_id
+        ,product_id
+         /* Columms */
+        ,unit_price
+        ,quantity
+        ,discount
+    from source
 )
 
 select * from order_details

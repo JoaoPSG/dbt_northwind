@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: d_customers
+    columns:
+      - name: customer_sk
+        description: Surrogate Key
+      - name: customer_id
+        description: Natural Key
+      - name: company_name
+      - name: contact_title
+      - name: customer_address
+      - name: city
+      - name: region
+      - name: postal_code
+      - name: country
+      - name: phone
+      - name: fax

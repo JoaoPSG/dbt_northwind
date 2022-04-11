@@ -3,7 +3,12 @@ with source as (
 ),
 
 region as (
-    select * from source
+    select
+        /* Natural Key */
+        region_id
+        /* Columns */
+        ,region_description
+    from source
 )
 
 select * from region

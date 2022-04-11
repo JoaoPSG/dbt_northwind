@@ -3,7 +3,13 @@ with source as (
 ),
 
 shippers as (
-    select * from source
+    select
+        /* Natural Key */
+        shipper_id
+        /* Columns */
+        ,company_name
+        ,phone
+    from source
 )
 
 select * from shippers

@@ -3,7 +3,13 @@ with source as (
 ),
 
 territories as (
-    select * from source
+    select
+        /* Natural Key */
+        territory_id
+        /* Columns */
+        ,territory_description
+        ,region_id
+    from source
 )
 
 select * from territories

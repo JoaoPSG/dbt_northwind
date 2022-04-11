@@ -3,7 +3,10 @@ with source as (
 ),
 
 employee_territories as (
-    select * from source
+    select
+        employee_id 
+        ,territory_id
+    from source
 )
 
 select * from employee_territories

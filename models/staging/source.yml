@@ -5,18 +5,142 @@ sources:
     description: "northwind dw big query"
     database: valid-sol-346522
     schema: northwind
+    
     tables:
       - name: public_categories
+        columns:
+          - name: category_id
+            description: Natural Key
+          - name: category_name
+          - name: description
+
       - name: public_customers
+        columns:
+          - name: customer_id
+            description: Natural Key
+          - name: company_name
+          - name: contact_name
+          - name: contact_title
+          - name: address
+          - name: city
+          - name: region
+          - name: postal_code
+          - name: country
+          - name: phone
+          - name: fax
+
       - name: public_employees
+        columns:
+          - name: employee_id
+            description: Natural Key
+          - name: last_name
+          - name: first_name
+          - name: title
+          - name: title_of_courtesy
+          - name: birth_date
+          - name: hire_date
+          - name: address
+          - name: city
+          - name: region
+          - name: postal_code
+          - name: country
+          - name: home_phone
+          - name: extension
+          - name: photo
+          - name: notes
+          - name: reports_to
+          - name: photo_path
+
       - name: public_order_details
+        columns:
+          - name: order_id
+            description: Natural Key
+          - name: product_id
+            description: Natural Key
+          - name: unit_price
+          - name: quantity
+          - name: discount
+
       - name: public_orders
+        columns:
+          - name: order_id
+            description: Natural Key
+          - name: customer_id
+            description: Foreing Key
+          - name: employee_id
+            description: Foreing Key
+          - name: order_date
+            description: -n Cast to Date
+          - name: required_date
+            description: -n Cast to Date
+          - name: shipped_date
+            description: -n Cast to Date
+          - name: ship_via
+            description: Foreing Key to shippers -n Rename to shipper_id
+          - name: freight
+          - name: ship_name
+          - name: ship_address
+          - name: ship_city
+          - name: ship_region
+          - name: ship_postal_code
+          - name: ship_country
+
+
       - name: public_products
+        columns:
+          - name: product_id
+            description: Natural Key
+          - name: product_name
+          - name: supplier_id
+          - name: category_id
+          - name: quantity_per_unit
+          - name: unit_price
+          - name: units_in_stock
+          - name: units_on_order
+          - name: reorder_level
+          - name: discontinued
+
       - name: public_region
+        columns:
+          - name: region_id
+            description: Natural Key
+          - name: region_description
+
       - name: public_shippers
+        columns:
+          - name: shipper_id
+            description: Natural Key
+          - name: company_name
+          - name: phone
+
       - name: public_suppliers
+        columns:
+          - name: supplier_id
+            description: Natural Key
+          - name: company_name
+          - name: contact_name
+          - name: contact_title
+          - name: address
+          - name: city
+          - name: region
+          - name: postal_code
+          - name: country
+          - name: phone
+          - name: fax
+          - name: homepage
+
       - name: public_territories
+        columns:
+          - name: territory_id
+          - name: territory_description
+          - name: region_id
+      
       - name: public_employee_territories
+        columns:
+          - name: employee_id
+            description: Natural Key 
+          - name: territory_id
+            description: Natural Key
 
 
 

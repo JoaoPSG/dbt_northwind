@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: d_employees
+    columns:
+      - name: employee_id
+        description: Natural Key
+      - name: last_name
+      - name: first_name
+      - name: title
+      - name: title_of_courtesy
+      - name: birth_date
+      - name: hire_date
+      - name: address
+      - name: city
+      - name: region
+      - name: postal_code
+      - name: country
+      - name: home_phone
+      - name: extension
+      - name: photo
+      - name: notes
+      - name: reports_to
+      - name: photo_path
+      - name: territory_id
+        description: Foreing Key
+      - name: territory_description
+      - name: region_id

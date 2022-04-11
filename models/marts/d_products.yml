@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: d_products
+    columns:
+      - name: product_sk
+        description: Auto Incremental Surrogate Key
+      - name: products.product_id
+        description: Natural Key
+      - name: supplier_id
+      - name: product_name
+      - name: quantity_per_unit
+      - name: unit_price
+      - name: units_in_stock
+      - name: units_on_order
+      - name: reorder_level
+      - name: discontinued
+      - name: category_name
+      - name: catetgory_description
+      - name: supplier_name
+      - name: supplier_contact
+      - name: supplier_contact_title
+      - name: supplier_address
+      - name: supplier_city
+      - name: supplier_region
+      - name: supplier_postal_code
+      - name: supplier_country
+      - name: supplier_phone
+      - name: supplier_fax
+      - name: supplier_homepage

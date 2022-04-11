@@ -38,8 +38,3 @@ models:
       +materialized: table
     staging:
       +materialized: ephemeral
-
-seeds:
-  products:
-    +tags: seed_
-    +alias: <string>

@@ -12,8 +12,6 @@ sources:
       - name: d_shippers
       - name: f_orders_details
 
-
-
   # - name: northwind
   #   description: "northwind database"
   #   database: northwind
