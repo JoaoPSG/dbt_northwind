@@ -51,9 +51,9 @@ with
             ,order_details.quantity
             ,order_details.discount
 
-            ,cast(orders.order_date as datetime) as order_date 
-            ,cast(orders.required_date as datetime) as required_date 
-            ,cast(orders.shipped_date as datetime) as shipped_date 
+            ,order_date 
+            ,required_date 
+            ,shipped_date 
 
             ,orders.freight
             ,orders.ship_name

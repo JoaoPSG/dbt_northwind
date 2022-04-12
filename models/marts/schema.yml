@@ -1,16 +1,16 @@
-version: 2
+# version: 2
 
-sources:
-  - name: northwind_bq
-    description: "northwind dw big query"
-    database: valid-sol-346522
-    schema: dbt_northwind
-    tables:
-      - name: d_customemers
-      - name: d_employees
-      - name: d_products
-      - name: d_shippers
-      - name: f_orders_details
+# sources:
+#   - name: northwind_bq
+#     description: "northwind dw big query"
+#     database: valid-sol-346522
+#     schema: dbt_northwind
+#     tables:
+#       - name: d_customemers
+#       - name: d_employees
+#       - name: d_products
+#       - name: d_shippers
+#       - name: f_orders_details
 
   # - name: northwind
   #   description: "northwind database"

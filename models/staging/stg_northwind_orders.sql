@@ -5,14 +5,14 @@ with source as (
 orders as (
     select
         /* Natural Key */
-        order_id
+        cast(order_id as int) as order_id 
         /* Foreing Key */    
         ,customer_id
         ,employee_id
         /* Columns */
-        ,order_date
-        ,required_date
-        ,shipped_date
+        ,cast(order_date as date) as order_date 
+        ,cast(required_date as date) as required_date 
+        ,cast(shipped_date as date) as shipped_date 
         ,ship_via as shipper_id
         ,freight
         ,ship_name
